@@ -1,0 +1,75 @@
+.app {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(168, 173, 182);
+    display: grid;
+    place-items: center;
+}
+
+.input{
+    height: 50px;
+    width: 80%;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    background: none;
+    border: none;
+    margin-left: 12px;
+    flex: 1;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    margin-right: 8px;
+    background-color: rgb(214, 213, 213);
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 50px;
+}
+
+.app__container {
+    height: 550px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(232, 234, 237);
+    border-radius: 10px;
+    padding: 25px 0;
+}
+
+.app__todoContainer {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todoItem {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    background-color: white;
+    margin: 6px 4px;
+    padding-left: 10px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.todoItem > p {
+    flex: 1;
+}
+
+.todoItem--done {
+    text-decoration: line-through;
+}
